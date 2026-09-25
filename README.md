@@ -35,13 +35,13 @@ what I've helped build.
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/Sc4rville/scribe"><img src="assets/scribe.gif" width="100%" alt="scribe turning a notebook photo into structured notes"></a>
-      <h3><a href="https://github.com/Sc4rville/scribe">scribe</a></h3>
+      <a href="https://github.com/Sc4rville/cizo"><img src="assets/cizo.gif" width="100%" alt="Cizo agenda, clients and dashboard"></a>
+      <h3><a href="https://github.com/Sc4rville/cizo">Cizo</a></h3>
       <p>
-      Snap a page of your paper notebook and get back a clean note, with its tasks, events, contacts
-      and ideas already filed. There's nothing to tap after the capture.
+      Software for hair salons and barbershops, with an agenda that follows the real day: when a
+      client runs late or a cut overruns, the schedule shows it live. Clients, campaigns and KPIs sit alongside.
       </p>
-      <p><sub>TypeScript · Hono · Inngest · Postgres</sub></p>
+      <p><sub>React Native · Expo · TypeScript · Supabase</sub></p>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/Sc4rville/lifebar"><img src="assets/lifebar.gif" width="100%" alt="lifebar daily check-in"></a>
