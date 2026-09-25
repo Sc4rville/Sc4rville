@@ -14,6 +14,18 @@ what I've helped build.
 
 <table>
   <tr>
+    <td colspan="2" valign="top">
+      <a href="https://github.com/Sc4rville/scarvilius"><img src="assets/scarvilius.gif" width="100%" alt="Scarvilius: voice-first Linux workstation"></a>
+      <h3><a href="https://github.com/Sc4rville/scarvilius">Scarvilius</a></h3>
+      <p>
+      My whole workstation, open-sourced. Press a key, talk, and the words land in the right window, the
+      right zellij pane, or straight into a terminal coding agent, delivered and verified. There are also
+      screenshot shortcuts, an agent-ready zellij workspace, and a 40-assertion selftest.
+      </p>
+      <p><sub>Bash · Python · GNOME Wayland · zellij · kitty</sub></p>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/Sc4rville/lastwebstudios"><img src="assets/lastwebstudios.gif" width="100%" alt="LastWebStudios review cockpit"></a>
       <h3><a href="https://github.com/Sc4rville/lastwebstudios">LastWebStudios</a></h3>
