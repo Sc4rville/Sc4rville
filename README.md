@@ -17,48 +17,61 @@ what I've helped build.
     <td width="50%" valign="top">
       <a href="https://github.com/Sc4rville/lastwebstudios"><img src="assets/genesis.gif" width="100%" alt="GENESIS building a demo website"></a>
       <h3><a href="https://github.com/Sc4rville/lastwebstudios">GENESIS</a></h3>
-      An autonomous web studio. It finds businesses with weak websites, builds each one a demo
-      from its own content, pitches with the finished site, and learns from every reply.
-      <br><sub><code>TypeScript</code> <code>Node</code> <code>Playwright</code> <code>Postgres</code></sub>
+      <p>
+      An autonomous web studio. It finds businesses with a weak website, rebuilds the site from
+      their own content, pitches with the finished result, and learns from every cycle.
+      </p>
+      <p><sub>TypeScript · Node · Playwright · LLM</sub></p>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/Sc4rville/tsunami"><img src="assets/tsunami.gif" width="100%" alt="tsunami rendering glow-up videos"></a>
       <h3><a href="https://github.com/Sc4rville/tsunami">tsunami</a></h3>
-      Drop a song, get a batch of 9:16 glow-up videos: the same face from baby to adult, with the
-      cut landing on the kick.
-      <br><sub><code>Python</code> <code>ffmpeg</code> <code>image models</code></sub>
+      <p>
+      Drop a song, get a batch of 9:16 before/after videos, each one cutting on the drop. The same
+      face carries through from baby to adult.
+      </p>
+      <p><sub>Python · ffmpeg · numpy · vanilla JS</sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/Sc4rville/scribe"><img src="assets/scribe.gif" width="100%" alt="scribe turning a notebook photo into structured notes"></a>
       <h3><a href="https://github.com/Sc4rville/scribe">scribe</a></h3>
-      Photograph a page of your paper notebook. Tasks, events, contacts and ideas are pulled out and
-      filed where they belong, without a single tap after the capture.
-      <br><sub><code>TypeScript</code> <code>Hono</code> <code>Zod</code> <code>Postgres</code></sub>
+      <p>
+      Snap a page of your paper notebook and get back a clean note, with its tasks, events, contacts
+      and ideas already filed. There's nothing to tap after the capture.
+      </p>
+      <p><sub>TypeScript · Hono · Inngest · Postgres</sub></p>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/Sc4rville/lifebar"><img src="assets/lifebar.gif" width="100%" alt="lifebar daily check-in"></a>
       <h3><a href="https://github.com/Sc4rville/lifebar">lifebar</a></h3>
-      A whole life on one screen: keyboard-only daily check-ins, an annotated figure, and a bento of
-      money, sleep and deep work. Everything stays in your browser.
-      <br><sub><code>React 19</code> <code>TypeScript</code> <code>Vite</code> <code>SVG</code></sub>
+      <p>
+      Your life as an instrument panel. A 30-second daily check-in, and a figure whose body lights up
+      where you're thriving or slipping. Everything stays in your browser.
+      </p>
+      <p><sub>React 19 · TypeScript · Vite · SVG</sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/Sc4rville/entropy"><img src="assets/entropy.gif" width="100%" alt="Entropy study planner"></a>
-      <h3><a href="https://github.com/Sc4rville/entropy">Entropy</a> <sub>with <a href="https://github.com/kabylesystem">@kabylesystem</a></sub></h3>
-      A study planner for STEM students. Import your problem sheets as PDFs; every exercise gets
-      rated and scheduled with spaced repetition, all the way to exam day.
-      <br><sub><code>Next.js</code> <code>React 19</code> <code>Supabase</code> <code>Three.js</code></sub>
+      <a href="https://github.com/kabylesystem/entropy"><img src="assets/entropy.gif" width="100%" alt="Entropy study planner"></a>
+      <h3><a href="https://github.com/kabylesystem/entropy">Entropy</a> <sub>by <a href="https://github.com/kabylesystem">@kabylesystem</a></sub></h3>
+      <p>
+      A study planner for science students. Import your course PDFs: every exercise is found, ranked
+      by exam value and scheduled backwards from exam day, with spaced repetition. I worked on
+      onboarding and the 42 import.
+      </p>
+      <p><sub>Next.js · React 19 · Supabase · Three.js</sub></p>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/Makzura/tower-defense"><img src="assets/tower-defense.gif" width="100%" alt="Tower Defense gameplay"></a>
       <h3><a href="https://github.com/Makzura/tower-defense">Tower Defense</a> <sub>by <a href="https://github.com/Makzura">@Makzura</a></sub></h3>
-      A 3D tower defense in plain JavaScript and WebGL, with deep upgrade trees. It runs straight from
-      <code>file://</code>, with no build step.
-      <br><sub><code>JavaScript</code> <code>WebGL</code> <code>Blender</code></sub>
+      <p>
+      A 3D tower defense in plain JavaScript and hand-written WebGL, with five towers, deep upgrade trees
+      and 35 waves. It runs straight from <code>file://</code>, with no build step.
+      </p>
+      <p><sub>JavaScript · WebGL · Blender</sub></p>
     </td>
   </tr>
 </table>
@@ -67,8 +80,8 @@ what I've helped build.
 
 ### How I build
 
-- **Mocks first, keys last.** Every pipeline runs end to end on fakes before it touches a paid API,
-  so a missing service never blocks the run.
+- **Mocks first, keys last.** A pipeline should run end to end on fakes before it touches a paid API,
+  so a missing key never blocks you from trying it.
 - **Local-first by default.** Your data lives in your browser or on your disk until you decide otherwise.
 - **Loops over demos.** Whatever I ship should measure its own output and get better the next time
   round.
@@ -81,4 +94,4 @@ what I've helped build.
 
 <br>
 
-<p align="right"><sub>Everything above runs locally. Clone it, break it, tell me.</sub></p>
+<p align="right"><sub>Every repo has a quick start. Clone it, break it, tell me.</sub></p>
