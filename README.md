@@ -1,14 +1,13 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img alt="Scarville: I build software that runs itself." src="assets/header-dark.svg" width="100%">
+  <img alt="Scarville: Swording worlds with words. Systems and anthems with tokens." src="assets/header-dark.svg" width="100%">
 </picture>
 
 <br>
 
-I like software that keeps going after I close the laptop: pipelines that find their own work,
-tools that keep your data on your machine, and the occasional game. Here is what I've built and
-what I've helped build.
+I build automation pipelines, local-first apps and games, mostly in TypeScript and Python.
+Every project below is open source and has a quick start in its README.
 
 <br>
 
@@ -18,11 +17,11 @@ what I've helped build.
       <a href="https://github.com/Sc4rville/scarvilius"><img src="assets/scarvilius.gif" width="100%" alt="Scarvilius: voice-first Linux workstation"></a>
       <h3><a href="https://github.com/Sc4rville/scarvilius">Scarvilius</a></h3>
       <p>
-      My whole workstation, open-sourced. Press a key, talk, and the words land in the right window, the
-      right zellij pane, or straight into a terminal coding agent, delivered and verified. There are also
-      screenshot shortcuts, an agent-ready zellij workspace, and a 40-assertion selftest.
+      My Linux workstation as a repo. Push-to-talk dictation that pastes into the window, kitty tab or zellij
+      pane you started from, a bridge that sends voice to a terminal agent and reads the pane back to confirm
+      delivery, screenshot shortcuts, an agent-ready zellij layout, an idempotent installer and a 40-assertion selftest.
       </p>
-      <p><sub>Bash · Python · GNOME Wayland · zellij · kitty</sub></p>
+      <p><sub>Bash · Python · GNOME Wayland · D-Bus · zellij · kitty · Yazi · MIT</sub></p>
     </td>
   </tr>
   <tr>
@@ -30,39 +29,40 @@ what I've helped build.
       <a href="https://github.com/Sc4rville/lastwebstudios"><img src="assets/lastwebstudios.gif" width="100%" alt="LastWebStudios review cockpit"></a>
       <h3><a href="https://github.com/Sc4rville/lastwebstudios">LastWebStudios</a></h3>
       <p>
-      An autonomous web studio. It finds businesses with a weak website, rebuilds the site from
-      their own content, pitches with the finished result, and learns from every cycle.
+      Web-design pipeline. Scores businesses from their raw HTML, parses their current site in a real browser,
+      rebuilds it from their own content, runs a render gate and packages a before/after pitch. Review feedback
+      and outcomes recalibrate the scoring.
       </p>
-      <p><sub>TypeScript · Node · Playwright · LLM</sub></p>
+      <p><sub>TypeScript · Node · Playwright · OpenAI-compatible LLM · MIT</sub></p>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/Sc4rville/tsunami"><img src="assets/tsunami.gif" width="100%" alt="tsunami rendering glow-up videos"></a>
+      <a href="https://github.com/Sc4rville/tsunami"><img src="assets/tsunami.gif" width="100%" alt="tsunami rendering before/after videos"></a>
       <h3><a href="https://github.com/Sc4rville/tsunami">tsunami</a></h3>
       <p>
-      Drop a song, get a batch of 9:16 before/after videos, each one cutting on the drop. The same
-      face carries through from before to after.
+      Batch renderer for 9:16 before/after music videos. Finds the drop in the track with numpy, generates one
+      ffmpeg filter graph per video and renders the batch in parallel. Manual mode runs without any API key.
       </p>
-      <p><sub>Python · ffmpeg · numpy · vanilla JS</sub></p>
+      <p><sub>Python · numpy · ffmpeg · vanilla JS · MIT</sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/Sc4rville/cizo"><img src="assets/cizo.gif" width="100%" alt="Cizo agenda, clients and dashboard"></a>
+      <a href="https://github.com/Sc4rville/cizo"><img src="assets/cizo.gif" width="100%" alt="Cizo CRM and booking flow"></a>
       <h3><a href="https://github.com/Sc4rville/cizo">Cizo</a></h3>
       <p>
-      Software for hair salons and barbershops, with an agenda that follows the real day: when a
-      client runs late or a cut overruns, the schedule shows it live. Clients, campaigns and KPIs sit alongside.
+      Salon management app: public booking flow, win-back CRM, live multi-stylist agenda and an owner dashboard.
+      One Expo Router codebase for iOS, Android and web, with a built-in demo mode.
       </p>
-      <p><sub>React Native · Expo · TypeScript · Supabase</sub></p>
+      <p><sub>Expo · React Native · TypeScript · TanStack Query · Zustand · Supabase · MIT</sub></p>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/Sc4rville/lifebar"><img src="assets/lifebar.gif" width="100%" alt="lifebar daily check-in"></a>
       <h3><a href="https://github.com/Sc4rville/lifebar">lifebar</a></h3>
       <p>
-      Your life as an instrument panel. A 30-second daily check-in, and a figure whose body lights up
-      where you're thriving or slipping. Everything stays in your browser.
+      Local-first life dashboard. Keyboard check-in across six domains, an SVG body map scored per domain,
+      streaks, a year heatmap and 30/90/365-day stats. Data stays in localStorage, with JSON export.
       </p>
-      <p><sub>React 19 · TypeScript · Vite · SVG</sub></p>
+      <p><sub>React 19 · TypeScript · Vite · hand-rolled SVG · MIT</sub></p>
     </td>
   </tr>
   <tr>
@@ -70,39 +70,46 @@ what I've helped build.
       <a href="https://github.com/Sc4rville/entropy"><img src="assets/entropy.gif" width="100%" alt="Entropy study planner"></a>
       <h3><a href="https://github.com/Sc4rville/entropy">Entropy</a> <sub>with <a href="https://github.com/kabylesystem">@kabylesystem</a></sub></h3>
       <p>
-      A study planner for science students. Import your course PDFs: every exercise is found, ranked
-      by exam value and scheduled backwards from exam day, with spaced repetition. Built as a collab.
+      Study planner for science students. Splits course PDFs into exercises (heuristics first, LLM fallback),
+      ranks them by exam value, schedules backwards from exam dates and runs spaced repetition per pattern group.
       </p>
-      <p><sub>Next.js · React 19 · Supabase · Three.js</sub></p>
+      <p><sub>Next.js 16 · React 19 · Supabase · Tailwind · Three.js · pdf.js · PWA</sub></p>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/Sc4rville/tower-defense"><img src="assets/tower-defense.gif" width="100%" alt="Tower Defense gameplay"></a>
       <h3><a href="https://github.com/Sc4rville/tower-defense">Tower Defense</a></h3>
       <p>
-      A 3D tower defense in plain JavaScript and hand-written WebGL, with five towers, deep upgrade trees
-      and 35 waves. It runs straight from <code>file://</code>, with no build step.
+      3D tower defense on a WebGL renderer written from scratch: five towers with upgrade trees, 35 waves,
+      sprite sheets generated by Blender scripts. No engine, no bundler, no dependencies, runs from <code>file://</code>.
       </p>
-      <p><sub>JavaScript · WebGL · Blender</sub></p>
+      <p><sub>JavaScript · WebGL · Blender Python · MIT</sub></p>
     </td>
   </tr>
 </table>
 
-<br>
-
-### How I build
-
-- **Mocks first, keys last.** A pipeline should run end to end on fakes before it touches a paid API,
-  so a missing key never blocks you from trying it.
-- **Local-first by default.** Your data lives in your browser or on your disk until you decide otherwise.
-- **Loops over demos.** Whatever I ship should measure its own output and get better the next time
-  round.
-
-### Toolbox
-
-<code>TypeScript</code> <code>React</code> <code>Next.js</code> <code>Node</code> <code>Python</code>
-<code>Three.js</code> <code>WebGL</code> <code>Supabase</code> <code>Postgres</code>
-<code>Playwright</code> <code>ffmpeg</code> <code>Linux</code>
+Also: [durump3](https://github.com/Sc4rville/durump3), a self-hosted MP3 converter on Flask, yt-dlp and ffmpeg.
 
 <br>
 
-<p align="right"><sub>Every repo has a quick start. Clone it, break it, tell me.</sub></p>
+### Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,js,py,bash,html,css,react,nextjs,vite,tailwind,threejs&theme=dark&perline=11" alt="TypeScript, JavaScript, Python, Bash, HTML, CSS, React, Next.js, Vite, Tailwind, Three.js">
+  <br>
+  <img src="https://skillicons.dev/icons?i=nodejs,flask,supabase,postgres,vercel,svg,linux,ubuntu,git,github,blender&theme=dark&perline=11" alt="Node.js, Flask, Supabase, Postgres, Vercel, SVG, Linux, Ubuntu, Git, GitHub, Blender">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo">
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native">
+  <img src="https://img.shields.io/badge/WebGL-990000?style=for-the-badge&logo=webgl&logoColor=white" alt="WebGL">
+  <img src="https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white" alt="FFmpeg">
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logoColor=white" alt="Playwright">
+  <img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white" alt="TanStack Query">
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion">
+  <img src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe">
+  <img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA">
+  <img src="https://img.shields.io/badge/zellij-1b1b1b?style=for-the-badge&logo=gnometerminal&logoColor=white" alt="zellij">
+  <img src="https://img.shields.io/badge/kitty-1b1b1b?style=for-the-badge&logo=gnometerminal&logoColor=white" alt="kitty">
+</p>
