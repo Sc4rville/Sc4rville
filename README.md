@@ -15,8 +15,8 @@ what I've helped build.
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/Sc4rville/lastwebstudios"><img src="assets/genesis.gif" width="100%" alt="GENESIS building a demo website"></a>
-      <h3><a href="https://github.com/Sc4rville/lastwebstudios">GENESIS</a></h3>
+      <a href="https://github.com/Sc4rville/lastwebstudios"><img src="assets/lastwebstudios.gif" width="100%" alt="LastWebStudios review cockpit"></a>
+      <h3><a href="https://github.com/Sc4rville/lastwebstudios">LastWebStudios</a></h3>
       <p>
       An autonomous web studio. It finds businesses with a weak website, rebuilds the site from
       their own content, pitches with the finished result, and learns from every cycle.
@@ -28,7 +28,7 @@ what I've helped build.
       <h3><a href="https://github.com/Sc4rville/tsunami">tsunami</a></h3>
       <p>
       Drop a song, get a batch of 9:16 before/after videos, each one cutting on the drop. The same
-      face carries through from baby to adult.
+      face carries through from before to after.
       </p>
       <p><sub>Python · ffmpeg · numpy · vanilla JS</sub></p>
     </td>
@@ -55,18 +55,17 @@ what I've helped build.
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/kabylesystem/entropy"><img src="assets/entropy.gif" width="100%" alt="Entropy study planner"></a>
-      <h3><a href="https://github.com/kabylesystem/entropy">Entropy</a> <sub>by <a href="https://github.com/kabylesystem">@kabylesystem</a></sub></h3>
+      <a href="https://github.com/Sc4rville/entropy"><img src="assets/entropy.gif" width="100%" alt="Entropy study planner"></a>
+      <h3><a href="https://github.com/Sc4rville/entropy">Entropy</a> <sub>with <a href="https://github.com/kabylesystem">@kabylesystem</a></sub></h3>
       <p>
       A study planner for science students. Import your course PDFs: every exercise is found, ranked
-      by exam value and scheduled backwards from exam day, with spaced repetition. I worked on
-      onboarding and the 42 import.
+      by exam value and scheduled backwards from exam day, with spaced repetition. Built as a collab.
       </p>
       <p><sub>Next.js · React 19 · Supabase · Three.js</sub></p>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/Makzura/tower-defense"><img src="assets/tower-defense.gif" width="100%" alt="Tower Defense gameplay"></a>
-      <h3><a href="https://github.com/Makzura/tower-defense">Tower Defense</a> <sub>by <a href="https://github.com/Makzura">@Makzura</a></sub></h3>
+      <a href="https://github.com/Sc4rville/tower-defense"><img src="assets/tower-defense.gif" width="100%" alt="Tower Defense gameplay"></a>
+      <h3><a href="https://github.com/Sc4rville/tower-defense">Tower Defense</a></h3>
       <p>
       A 3D tower defense in plain JavaScript and hand-written WebGL, with five towers, deep upgrade trees
       and 35 waves. It runs straight from <code>file://</code>, with no build step.
